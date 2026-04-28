@@ -8,6 +8,13 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+/* DIVS CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+}
 
 /* RESPONSIVE */
 
@@ -52,6 +59,8 @@ header {
   background: white;
   padding: 20px 80px;
   border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
 }
 
 
@@ -92,9 +101,9 @@ nav {
 
 
 .hero {
-  padding: 120px 80px;
+  padding: 30px 10px;
   background: #f5f9ff;
-  
+
 }
 
 .hero h1 {
@@ -120,15 +129,59 @@ nav {
 
 
 
-/* DIVS CONTAINER */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
 
+
+/* about */
+.about {
+  padding: 80px 0;
+  text-align: center;
 }
 
+.about p {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 20px;
+  line-height: 1.6;
+}
 
+/* servicios */
+.services {
+  padding: 80px 0;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.services-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* contacto */
+.contact {
+  padding: 80px 0;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+.contact a {
+  color: #0077ff;
+  text-decoration: none;
+  font-weight: 500;
+}
 
 
 /* testimonios */
@@ -177,4 +230,8 @@ nav {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+}
+
+.foot{
+  text-align: center;
 }
