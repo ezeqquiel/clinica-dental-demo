@@ -43,6 +43,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
 }
 
 .nav-links {
@@ -65,8 +67,8 @@ nav {
 }
 
 .logo {
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 40px;
+  width: auto;
 }
 
 
@@ -211,10 +213,7 @@ nav {
 
 @media (max-width: 768px) {
 
-nav {
-    flex-direction: column;
-    gap: 20px;
-}
+
 
 .nav-links {
     flex-direction: column;
@@ -249,19 +248,29 @@ nav {
   display: block;
 }
 
+
+
 .nav-links{
   display: none;
 }
 
-.nav-links.active {
+.nav-links.open {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 70px;
-  right: 20px;
+
+  top: 50px;
+  right: 0px;
+
   background: white;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 15px;
+
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+  gap: 15px;
+  width: 180px;
+
 }
 
 }

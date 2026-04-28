@@ -15,11 +15,11 @@
 <body>
 
     <header class="hero">
-        <div class="container">
-            <nav>
-                <h2 class="logo">CDR-ZN</h2>
 
-                
+            <nav>
+
+                <img src="" alt="IMG" class="logo">
+
                 <ul class="nav-links">
                     <li><a href="#services">Servicios</a></li>
                     <li><a href="#about">Sobre Nosotros</a></li>
@@ -33,7 +33,6 @@
                     ☰
                 </div>  
             </nav>
-        </div>
 
             <section class="hero-text">
 
@@ -178,9 +177,9 @@
 
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
-    
+
     hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
+      navLinks.classList.toggle("open");
     });
 
 </script>
