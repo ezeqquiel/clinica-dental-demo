@@ -18,12 +18,20 @@
         <div class="container">
             <nav>
                 <h2 class="logo">CDR-ZN</h2>
+
                 
                 <ul class="nav-links">
-                    <li><a href="#about">Sobre Nosotros</a></li>
                     <li><a href="#services">Servicios</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
                     <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    
                 </ul>
+
+
+                <div class="hamburger">
+                    ☰
+                </div>  
             </nav>
         </div>
 
@@ -166,6 +174,15 @@
 
 
 
+<script>
 
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+</script>
 
 </html>
