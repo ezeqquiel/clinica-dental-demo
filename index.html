@@ -128,16 +128,20 @@
     
 
         <section class="contact" id="contact">
+            <h2>Contacto</h2>
+            <form action="https://formsubmit.co/ezemaidana1889@gmail.com" method="POST">
             
-            <div class="container">
-                <h2>Contacto</h2>
+              <input type="text" name="name" placeholder="Tu nombre y apellido" required>
             
-                <p>Av. Alberdi - Rosario</p>
-                
-                <a href="#" class="btn">
-                    Contactar por WhatsApp
-                </a>
-            </div>
+              <input type="email" name="email" placeholder="Tu email" required>
+            
+              <input type="hidden" name="_captcha" value="false">
+
+              <textarea name="message" placeholder="¿En que podemos ayudarte?" required></textarea>
+            
+              <button type="submit">Enviar mensaje</button>
+            
+            </form>
         
         </section>
 
