@@ -80,7 +80,11 @@ align-items: center;
 gap: 10px;
 }
   
-
+.cajaLogo h2 {
+  font-size: 20px;
+  color: #0077ff;
+  font-weight: 700;
+}
 
 .logo {
   width: 50px;
@@ -91,7 +95,7 @@ gap: 10px;
 
 }
 .logo:hover{
-  background-color: rgb(255, 255, 255);
+  background-color: #0077ff;
   border-radius: 50%;
 }
 
@@ -128,17 +132,59 @@ gap: 10px;
 
 /* about */
 .about {
-  padding: 80px 0;
+  padding: 230px 0;
   text-align: center;
   background-color: #f7f7f7;
 }
 
 .about p {
+
   max-width: 700px;
   margin: auto;
   margin-top: 20px;
   line-height: 1.6;
 }
+
+.about-grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px; margin-top: 2rem; 
+  
+}
+.about-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem; 
+
+  }
+.about-card .icon {
+   width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; font-size: 16px; 
+  }
+.about-card h3 {
+   font-size: 15px; font-weight: 600; margin: 0 0 8px; color: #111; 
+  }
+.about-card p {
+   font-size: 14px; color: #555; line-height: 1.6; margin: 0; 
+  }
+.about-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f9fafb; border-radius: 12px; padding: 2rem; margin-bottom: 0; border: 1px solid #e5e7eb; 
+  }
+.about-hero h2 {
+   font-size: 22px; font-weight: 600; margin: 0 0 12px; color: #111; 
+  }
+.about-hero p {
+
+   font-size: 15px; color: #555; line-height: 1.7; margin: 0; 
+  }
 
 /* servicios */
 .services {
@@ -147,9 +193,13 @@ gap: 10px;
   text-align: center;
 }
 
+.services h2{
+  padding-bottom: 40px;
+}
+
 .services-grid {
   display: flex;
-  gap: 30px;
+  gap: 100px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -159,21 +209,33 @@ gap: 10px;
   padding: 25px;
   border-radius: 10px;
   max-width: 300px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.30);
 }
 
 .imgService{
   width: 80px;
   height: 100px;
   border-radius: 20%;
+  
 }
 
+#serviceUrg{
+  width: 150px;
+  height: 110px;
+  border-radius: 5%;
+  
+}
 
+#serviceOdonInf{
+  width: 80px;
+  height: 110px;
+  border-radius: 5%;
+}
 
 
 /* contacto */
 .contact {
-  padding: 80px 0;
+  padding: 10px 0;
   background: #f7f7f7;
   text-align: center;
   gap: 130px;
@@ -219,12 +281,13 @@ gap: 10px;
 }
 
 .GoogleMaps{
-  margin-top: 20px;
+margin-top: 20px;
+
 }
 
 /* testimonios */
 .testimonios {
-  padding: 80px 0;
+  padding: 90px 0;
   background: #f7f7f7;
   text-align: center;
 }
@@ -235,6 +298,7 @@ gap: 10px;
 
 .testimonios-grid {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 }
@@ -337,6 +401,8 @@ gap: 10px;
 
 /* RESPONSIVE */
 
+
+
 @media (max-width: 768px) {
 
 .services{
@@ -364,8 +430,26 @@ gap: 10px;
 .testimonios-grid {
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonio {
+  width: 90%;
+  max-width: 400px;
+}
+
+.GoogleMaps{
+
+  width: 100%;
+
 
 }
+.GoogleMaps iframe{
+  width: 100%;
+}
+
+
 }
 
 

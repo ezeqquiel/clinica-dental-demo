@@ -92,13 +92,13 @@
                 </div>
 
                 <div class="service-card">
-                    <img src="images/urgenciaDental.jpg" alt="Urgencias" class="imgService">
+                    <img src="images/urgenciaDental.jpg" alt="Urgencias" class="imgService" id="serviceUrg">
                     <h3>Urgencias Dentales</h3>
                     <p>Atención rápida ante dolor o emergencias odontológicas.</p>
                 </div>
 
                 <div class="service-card">
-                    <img src="images/OdontologiaDental.jpg" alt="odontoInfantil" class="imgService">
+                    <img src="images/OdontologiaDental.jpg" alt="odontoInfantil" class="imgService" id="serviceOdonInf">
                   <h3>Odontología Infantil</h3>
                   <p>Cuidado dental especializado para niños.</p>
                 </div>
@@ -108,27 +108,43 @@
         </section>
     
 
-        <section class="about" id="about">
-        
-            <div class="container">
-                <h2>Sobre Nuestra Clínica</h2>
-        
-                <p>
-                    Somos un equipo de profesionales con más de 10 años
-                    de experiencia en odontología general y estética dental.
-                </p>
+<section class="about" id="about">
+  <div class="container">
 
-                <p>
-                    Nuestro objetivo es brindarte una atención cálida, profesional y con tecnología
-                    moderna para que puedas cuidar tu sonrisa con tranquilidad.
-                </p>
-            </div>
-        
-        </section>
+    <div class="about-hero">
+      <h2>Sobre nuestra clínica</h2>
+      <p>Somos una clínica dental ubicada en Rosario, Argentina, comprometida con la salud bucal y el bienestar de cada paciente. Trabajamos con un único objetivo: brindar atención odontológica de calidad en un ambiente cálido y de confianza.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="icon" style="background:#E6F1FB;">🏛️</div>
+        <h3>Historia y trayectoria</h3>
+        <p>Con años de presencia en Rosario, hemos acompañado a familias en cada etapa de su vida, desde la primera consulta pediátrica hasta los tratamientos más complejos.</p>
+      </div>
+      <div class="about-card">
+        <div class="icon" style="background:#E1F5EE;">👨‍⚕️</div>
+        <h3>Nuestro equipo</h3>
+        <p>Contamos con profesionales especializados en ortodoncia, implantología, odontopediatría, periodoncia y estética dental, en constante capacitación.</p>
+      </div>
+      <div class="about-card">
+        <div class="icon" style="background:#EEEDFE;">🦷</div>
+        <h3>Tecnología de vanguardia</h3>
+        <p>Radiografía digital, instrumental de última generación y técnicas modernas que garantizan diagnósticos precisos, mayor comodidad y resultados óptimos.</p>
+      </div>
+      <div class="about-card">
+        <div class="icon" style="background:#FAEEDA;">❤️</div>
+        <h3>Nuestros valores</h3>
+        <p>Creemos en la odontología preventiva, en escuchar a cada paciente y en tratar a la persona en su totalidad. Honestidad, respeto y vocación de servicio nos guían.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
     
 
         <section class="contact" id="contact">
-            <h2>Contacto</h2>
+            <h2>Contactanos!</h2>
             <form action="https://formsubmit.co/ezemaidana1889@gmail.com" method="POST">
             
               <input type="text" name="name" placeholder="Tu nombre y apellido" required>
@@ -268,24 +284,9 @@
     <a href="https://wa.me/543416486517?text=Hola%20vi%20su%20pagina%20web%20y%20quiero%20consultar%20por%20un%20turno%21" class="whatsapp-float" target="_blank">
         <img src="images/wsp-removebg-preview.png" alt="WhatsApp" class="wspIcon">
     </a>
+
+    <script src="js/script.js"></script>
 </body>
 
-
-
-
-
-
-
-
-<script>
-
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
-
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-    });
-
-</script>
 
 </html>
