@@ -132,13 +132,12 @@ gap: 10px;
 
 /* about */
 .about {
-  padding: 230px 0;
+  padding: 80px 0;
   text-align: center;
   background-color: #f7f7f7;
 }
 
 .about p {
-
   max-width: 700px;
   margin: auto;
   margin-top: 20px;
@@ -147,10 +146,24 @@ gap: 10px;
 
 .about-grid { 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px; margin-top: 2rem; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+  margin-top: 2rem; 
+  grid-template-areas: 
+  "AB1 AB2 AB2 AB3"
+  "AB1 AB4 AB4 AB3"
+  ;
   
 }
+
+.AB1{grid-area: AB1;}
+.AB2{grid-area: AB2;}
+.AB3{grid-area: AB3;}
+.AB4{grid-area: AB4;}
+
+
+
 .about-card {
   display: flex;
   justify-content: center;
@@ -235,7 +248,7 @@ gap: 10px;
 
 /* contacto */
 .contact {
-  padding: 10px 0;
+  padding: 80px 0;
   background: #f7f7f7;
   text-align: center;
   gap: 130px;
@@ -323,9 +336,14 @@ margin-top: 20px;
 }
 /* BENEFITS */
 .benefits{
-    padding: 60px 20px;
-    background-color: #f5f7fa;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: #f5f7fa;
+  text-align: center;
+
 }
 
 .benefits h2{
@@ -340,7 +358,7 @@ margin-top: 20px;
   "experiencia experiencia atencion"
   "tecnologia  tecnologia  atencion";
   gap: 30px;
-  align-items: stretch
+
 }
 .benefit--experiencia { grid-area: experiencia; }
 .benefit--tecnologia  { grid-area: tecnologia; }
@@ -469,6 +487,15 @@ margin-top: 20px;
   width: 100%;
 }
 
+.about-grid{
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "AB1"
+  "AB2"
+  "AB3"
+  "AB4"
+  ;
+}
 
 }
 
