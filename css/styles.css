@@ -355,58 +355,89 @@ margin-bottom:15px;
 
 /* contacto */
 .contact {
-  padding: 0px 0;
+  padding: 60px 20px;
   background: #f7f7f7;
   text-align: center;
-  gap: 130px;
 }
 
-.contact p {
-  margin: 10px 0;
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
 }
 
-.contact a {
-  color: #0077ff;
-  text-decoration: none;
-  font-weight: 500;
+.contact-subtitulo {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 15px;
 }
 
-#contact form{
-  max-width:500px;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:15px;
+#contact form {
+  max-width: 520px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: left;
 }
 
 #contact input,
-#contact textarea{
-  padding:12px;
-  border-radius:8px;
-  border:1px solid #ccc;
-  font-size:16px;
+#contact textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1.5px solid #e0e0e0;
+  font-size: 15px;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  outline: none;
+  background: #fafafa;
 }
 
-#contact button{
-  padding:12px;
-  border:none;
-  background:#0a7cff;
-  color:white;
-  border-radius:8px;
-  cursor:pointer;
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #0a7cff;
+  background: white;
 }
 
-#contact button:hover{
-  background:#005fd1;
+#contact textarea {
+  resize: vertical;
+  min-height: 130px;
 }
 
-.GoogleMaps{
-margin-top: 20px;
-
+#contact button {
+  padding: 14px;
+  border: none;
+  background: #0a7cff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
-.GoogleMaps iframe{
-  border-radius: 30px;
+
+#contact button:hover {
+  background: #005fd1;
+  transform: translateY(-1px);
+}
+
+#contact button:active {
+  transform: translateY(0);
+}
+
+.GoogleMaps {
+  margin-top: 20px;
+}
+
+.GoogleMaps iframe {
+  border-radius: 16px;
   width: 80%;
+  height: 400px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
 /* testimonios */
@@ -562,9 +593,16 @@ margin-top: 20px;
 
 
 @media (max-width: 768px) {
-  .testimonios-grid {
-    grid-template-columns: 1fr;
-  }
+#contact form {
+  padding: 24px;
+}
+.GoogleMaps iframe {
+  width: 100%;
+}
+
+.testimonios-grid {
+  grid-template-columns: 1fr;
+}
   .hero-container{
 flex-direction:column;
 text-align:center;
@@ -608,12 +646,7 @@ max-width:300px;
   max-width: 400px;
 }
 
-.GoogleMaps{
 
-  width: 100%;
-
-
-}
 .GoogleMaps iframe{
   width: 100%;
 }
