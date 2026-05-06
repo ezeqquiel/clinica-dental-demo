@@ -294,11 +294,14 @@ margin-bottom:15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 20px;
   opacity: 0;
   transition: transform 0.7s ease, opacity 0.7s ease;
 }
-
+.servicio-item:not(:last-child) {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e0e0e0;
+}
 .servicio-item img {
   width: 45%;
   height: 300px;
@@ -309,11 +312,14 @@ margin-bottom:15px;
 
 .servicio-texto {
   flex: 1;
+  
 }
+
 
 .servicio-texto h3 {
   font-size: 22px;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .servicio-texto p {
@@ -442,7 +448,6 @@ margin-bottom:15px;
 
 /* testimonios */
 .testimonios {
-  padding: 0px 0;
   background: #f7f7f7;
   text-align: center;
 }
@@ -456,6 +461,7 @@ margin-bottom:15px;
   grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
   place-items: center;
+  align-items: stretch;
 }
 
 .testimonio {
@@ -467,6 +473,7 @@ margin-bottom:15px;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  height: 100%;
 }   
 .testimonio p {
   font-size: 15px;
@@ -739,7 +746,26 @@ opacity:0.7;
   display: block;
 }
 
+  .servicio-item {
+    flex-direction: column;
+    gap: 16px; /* ← reducí el gap en mobile */
+  }
+   .desde-izquierda {
+    flex-direction: column; /* que no se invierta en mobile */
+  }
 
+  .servicio-item img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .servicios-lista {
+    gap: 100px; /* espacio entre servicios */
+
+  } 
+    
+  
+  
 
 .nav-links{
   display: none;
