@@ -222,7 +222,17 @@ margin-bottom:15px;
   ;
   
 }
+.about-grid div:hover{
+    transform: translateY(-5px);
+    transition: transform 0.2s ease;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
 
+
+}
+.about-grid div:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+}
 .AB1{grid-area: AB1;}
 .AB2{grid-area: AB2;}
 .AB3{grid-area: AB3;}
@@ -266,10 +276,17 @@ margin-bottom:15px;
   }
 
 /* servicios */
+.services{
+  overflow-x: hidden;
+}
+.services h2{
+  text-align: center;
+  padding: 15px;
+}
 .servicios-lista {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 20px;
   padding: 0px 40px;
 }
 
@@ -568,6 +585,7 @@ max-width:300px;
 
 .hero-text {
   margin-top: 20px;
+
 }
 
 .hero-text h1 {
