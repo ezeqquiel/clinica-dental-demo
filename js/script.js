@@ -26,9 +26,10 @@ const observerCards = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       setTimeout(() => {
         entry.target.classList.add('visible');
-      }, index * 150); // ← cada tarjeta aparece 150ms después de la anterior
+      }, index * 150); //  cada tarjeta aparece 150ms después de la anterior
     }
   });
 }, { threshold: 0.2 });
 
 cards.forEach(card => observerCards.observe(card));
+
